@@ -1,0 +1,225 @@
+# ─────────────────────────────────────────────
+#  GigShield — .gitignore
+#  Covers: React, Spring Boot, Python/ML, MySQL
+# ─────────────────────────────────────────────
+
+
+# ──────────────────────────────────────────────
+#  ENVIRONMENT & SECRETS (NEVER commit these)
+# ──────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# Backend secrets
+backend/src/main/resources/application-dev.properties
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-local.properties
+
+# API keys, credentials
+secrets/
+*.key
+*.pem
+*.p12
+*.jks
+
+
+# ──────────────────────────────────────────────
+#  FRONTEND — React / Node.js
+# ──────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.cache/
+frontend/coverage/
+
+# Vite
+frontend/.vite/
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# Lock files (keep only one — remove whichever you don't use)
+# frontend/package-lock.json
+# frontend/yarn.lock
+
+# Editor
+frontend/.eslintcache
+
+
+# ──────────────────────────────────────────────
+#  BACKEND — Spring Boot / Java / Maven
+# ──────────────────────────────────────────────
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/**/*.class
+backend/**/*.jar
+backend/**/*.war
+backend/**/*.ear
+
+# Maven
+backend/.mvn/
+!backend/.mvn/wrapper/maven-wrapper.properties
+
+# Logs
+backend/logs/
+backend/*.log
+backend/log/
+
+# STS / Eclipse
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings/
+backend/.springBeans
+backend/.sts4-cache/
+
+# IntelliJ IDEA
+backend/.idea/
+backend/**/*.iml
+backend/**/*.iws
+backend/**/*.ipr
+backend/out/
+
+# NetBeans
+backend/nbproject/private/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+
+
+# ──────────────────────────────────────────────
+#  ML / PYTHON
+# ──────────────────────────────────────────────
+
+# Virtual environments
+ml/venv/
+ml/.venv/
+ml/env/
+ml/.env/
+ml/__pycache__/
+ml/**/__pycache__/
+ml/**/*.pyc
+ml/**/*.pyo
+ml/**/*.pyd
+
+# Jupyter notebooks
+ml/.ipynb_checkpoints/
+ml/**/.ipynb_checkpoints/
+
+# Trained model files — large binaries, regenerate via train.py
+ml/models/*.pkl
+ml/models/*.joblib
+ml/models/*.h5
+ml/models/*.pt
+
+# Raw and processed data — often large, source separately
+ml/data/raw/
+ml/data/processed/
+
+# Keep synthetic data folder but ignore large CSVs if needed
+# ml/data/synthetic/*.csv
+
+# Python packaging
+ml/*.egg-info/
+ml/dist/
+ml/build/
+ml/.pytest_cache/
+ml/.coverage
+ml/htmlcov/
+
+# MyPy
+ml/.mypy_cache/
+
+
+# ──────────────────────────────────────────────
+#  DATABASE
+# ──────────────────────────────────────────────
+
+# MySQL dump files (can contain sensitive data)
+*.sql.bak
+*.dump
+database/backups/
+
+# Keep schema.sql — that should be committed
+!database/schema.sql
+
+
+# ──────────────────────────────────────────────
+#  OPERATING SYSTEM
+# ──────────────────────────────────────────────
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+
+# ──────────────────────────────────────────────
+#  IDE & EDITORS
+# ──────────────────────────────────────────────
+
+# IntelliJ IDEA (root level)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+
+
+# ──────────────────────────────────────────────
+#  MISC
+# ──────────────────────────────────────────────
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Upload temp files
+uploads/
+tmp/
+temp/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# CI artifacts
+.github/workflows/*.log
