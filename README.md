@@ -1193,8 +1193,8 @@ open http://localhost:5173/admin
 
 ## 👥 Team
 
-| Name | Role |
-|------|---------------------------|
+| Name | 
+|------|
 | Soumyajit Rout  | Team Lead |
 | Sagnik Pratihar | 
 | Aneek Mukherjee |
