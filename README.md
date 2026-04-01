@@ -4,7 +4,7 @@
 <div align="center">
 
 ![Guidewire DEVTrails 2026](https://img.shields.io/badge/Guidewire-DEVTrails%202026-orange?style=for-the-badge)
-![Phase 1](https://img.shields.io/badge/Phase-1%20%7C%20Ideation%20%26%20Foundation-blue?style=for-the-badge)
+![Phase 2](https://img.shields.io/badge/Phase-1%20%7C%20Ideation%20%26%20Foundation-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
 
 > **"When the rain stops Rahul from delivering — GigShield pays him anyway."**
