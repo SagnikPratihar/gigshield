@@ -4,7 +4,7 @@ import axios from 'axios';
 const MOCK_DELAY = 800;
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://localhost:8080/api';
 
 export const authApi = {
   sendOtp: async (phone) => {

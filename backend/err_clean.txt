@@ -1,0 +1,17 @@
+[ERROR] COMPILATION ERROR : 
+[ERROR] /F:/New folder (2)/gigshield/backend/src/main/java/com/gigshield/backend/service/ClaimService.java:[5,40] cannot find symbol
+[ERROR] /F:/New folder (2)/gigshield/backend/src/main/java/com/gigshield/backend/service/ClaimService.java:[19,13] cannot find symbol
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project backend: Compilation failure: Compilation failure: 
+[ERROR] /F:/New folder (2)/gigshield/backend/src/main/java/com/gigshield/backend/service/ClaimService.java:[5,40] cannot find symbol
+[ERROR]   symbol:   class ClaimRepository
+[ERROR]   location: package com.gigshield.backend.repository
+[ERROR] /F:/New folder (2)/gigshield/backend/src/main/java/com/gigshield/backend/service/ClaimService.java:[19,13] cannot find symbol
+[ERROR]   symbol:   class ClaimRepository
+[ERROR]   location: class com.gigshield.backend.service.ClaimService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
